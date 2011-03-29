@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<component name="org.nuxeo.ecm.webapp.user.dashboard.compat.actions">
+
+  <extension target="org.nuxeo.ecm.platform.actions.ActionService"
+    point="actions">
+
+    <action id="user_dashboard" link="user_dashboard"
+      label="command.user_dashboard" order="10">
+      <category>USER_SERVICES</category>
+      <filter id="user_dashboard_enabled">
+        <rule grant="true">
+          <condition>#{userServicesContext.dashboardEnabled}</condition>
+        </rule>
+      </filter>
+    </action>
+
+  </extension>
+
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<fragment version="1">
+
+  <extension target="application#MODULE">
+    <module>
+      <ejb>${bundle.fileName}</ejb>
+    </module>
+  </extension>
+
+  <extension target="pages#PAGES">
+
+    <page view-id="/user_dashboard.xhtml">
+      breadcrumb=command.user_dashboard
+    </page>
+
+  </extension>
+
+  <extension target="faces-config#NAVIGATION">
+
+    <navigation-case>
+      <from-outcome>user_dashboard</from-outcome>
+      <to-view-id>/dashboardcompat/user_dashboard.xhtml</to-view-id>
+      <redirect />
+    </navigation-case>
+
+  </extension>
+
+</fragment>
+
