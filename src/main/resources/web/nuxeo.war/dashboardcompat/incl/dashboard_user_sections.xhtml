@@ -5,7 +5,7 @@
 <h:panelGroup rendered="#{currentUser.anonymous}">
 <nxu:methodResult name="provider"
                   value="#{resultsProvidersCache.get('USER_SECTIONS')}">
-  <ui:decorate template="foldable_box_document_listing.xhtml">
+  <ui:decorate template="/dashboardcompat/incl/foldable_box_document_listing.xhtml">
     <ui:param name="documents" value="#{provider.currentPage}" />
     <ui:param name="provider" value="#{provider}" />
     <ui:param name="heading"

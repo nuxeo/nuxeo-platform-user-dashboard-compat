@@ -96,13 +96,18 @@
       <width>100%</width>
       <text-align>right</text-align>
     </layout>
+    <widget element="">
+      <view>theme view</view>
+      <icon>${org.nuxeo.ecm.contextPath}/icons/favicon.png</icon>
+      <charset>utf-8</charset>
+    </widget>
     <widget element="page[1]">
       <view>page frame</view>
     </widget>
     <widget element="page[1]/section[1]|page[1]/section[2]|page[1]/section[3]|page[1]/section[4]">
       <view>section frame</view>
     </widget>
-    <widget element="page[1]/section[1]/cell[2]|page[1]/section[1]/cell[3]|page[1]/section[2]/cell[1]|page[1]/section[3]/cell[1]|page[1]/section[3]/cell[2]|page[1]/section[4]/cell[1]">
+    <widget element="page[1]/section[1]/cell[1]|page[1]/section[1]/cell[2]|page[1]/section[1]/cell[3]|page[1]/section[2]/cell[1]|page[1]/section[3]/cell[1]|page[1]/section[3]/cell[2]|page[1]/section[4]/cell[1]">
       <view>cell frame</view>
     </widget>
     <widget element="page[1]/section[1]/cell[1]/fragment[1]">
