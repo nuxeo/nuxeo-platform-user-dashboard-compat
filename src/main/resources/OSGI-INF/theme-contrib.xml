@@ -143,7 +143,7 @@
     <application root="${org.nuxeo.ecm.contextPath}"
       template-engine="jsf-facelets">
 
-      <view id="/user_dashboard.xhtml">
+      <view id="/dashboardcompat/user_dashboard.xhtml">
         <theme>userDashboardCompat/user_dashboard</theme>
       </view>
 

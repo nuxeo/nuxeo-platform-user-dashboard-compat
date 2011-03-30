@@ -9,7 +9,7 @@
 
   <extension target="pages#PAGES">
 
-    <page view-id="/user_dashboard.xhtml">
+    <page view-id="/dashboardcompat/user_dashboard.xhtml">
       breadcrumb=command.user_dashboard
     </page>
 
@@ -24,6 +24,13 @@
     </navigation-case>
 
   </extension>
+
+  <install>
+    <!--  unzip the war template -->
+    <unzip from="${bundle.fileName}" to="/" prefix="web">
+      <include>web/nuxeo.war/**</include>
+    </unzip>
+  </install>
 
 </fragment>
 
