@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2006-2009 Nuxeo SA (http://nuxeo.com/) and contributors.
+ * (C) Copyright 2006-2011 Nuxeo SA (http://nuxeo.com/) and contributors.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -43,13 +43,13 @@ import org.nuxeo.ecm.core.api.PagedDocumentsProvider;
 import org.nuxeo.ecm.core.api.SortInfo;
 import org.nuxeo.ecm.core.api.impl.EmptyResultsProvider;
 import org.nuxeo.ecm.core.schema.FacetNames;
-import org.nuxeo.ecm.platform.jbpm.dashboard.DashBoardItem;
 import org.nuxeo.ecm.platform.jbpm.dashboard.DocumentProcessItem;
-import org.nuxeo.ecm.platform.jbpm.dashboard.WorkflowDashBoard;
+import org.nuxeo.ecm.platform.task.dashboard.DashBoardItem;
 import org.nuxeo.ecm.platform.ui.web.api.NavigationContext;
 import org.nuxeo.ecm.platform.ui.web.api.WebActions;
 import org.nuxeo.ecm.platform.ui.web.pagination.ResultsProviderFarmUserException;
 import org.nuxeo.ecm.webapp.clipboard.ClipboardActionsBean;
+import org.nuxeo.ecm.webapp.dashboard.workflow.WorkflowDashBoardActions;
 import org.nuxeo.ecm.webapp.helpers.EventNames;
 import org.nuxeo.ecm.webapp.pagination.ResultsProvidersCache;
 import org.nuxeo.ecm.webapp.querymodel.QueryModelActions;
@@ -114,7 +114,7 @@ public class DashBoardActionsBean implements DashboardActions {
     protected transient ResultsProvidersCache resultsProvidersCache;
 
     @In(create = true, required = false)
-    protected WorkflowDashBoard workflowDashBoardActions;
+    protected WorkflowDashBoardActions workflowDashBoardActions;
 
     @RequestParameter("sortColumn")
     protected String newSortColumn;
