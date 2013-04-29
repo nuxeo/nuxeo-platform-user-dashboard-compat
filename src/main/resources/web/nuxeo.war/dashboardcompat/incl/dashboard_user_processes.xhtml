@@ -17,7 +17,7 @@
   <div class="boxBody">
     <a4j:region renderRegionOnly="true">
       <h:form id="dashboardDocumentProcessTable">
-        <a4j:outputPanel>
+        <a4j:outputPanel layout="block">
           <c:choose>
             <c:when test="#{not empty currentUserProcesses}">   
               <h:outputText value="#{messages['label.user.processes']}"

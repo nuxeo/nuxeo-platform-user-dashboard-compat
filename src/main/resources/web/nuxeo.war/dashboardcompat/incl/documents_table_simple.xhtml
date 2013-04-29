@@ -9,7 +9,7 @@
   <h:form rendered="${!empty documents}">
   <a4j:region renderRegionOnly="true">
   
-  <a4j:outputPanel  id="#{idParam}">
+  <a4j:outputPanel  id="#{idParam}" layout="block">
     <ui:decorate template="/pagination/pageNavigationControls.xhtml">
       <ui:param name="provider" value="#{provider}" />
     </ui:decorate>
