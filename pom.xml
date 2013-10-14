@@ -17,10 +17,6 @@
     module for people who would like to keep a dependency on it.
   </description>
 
-  <properties>
-    <nuxeo.jbpm.version>5.8-SNAPSHOT</nuxeo.jbpm.version>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
@@ -29,12 +25,10 @@
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-jbpm-api</artifactId>
-      <version>${nuxeo.jbpm.version}</version>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-jbpm-web</artifactId>
-      <version>${nuxeo.jbpm.version}</version>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
