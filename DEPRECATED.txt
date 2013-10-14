@@ -2,4 +2,7 @@ This module is deprecated as of Nuxeo 5.4.2, as a new JSF dashboard has been
 implemented using content views, and as the new opensocial dashboard is also
 available.
 
-This module is not included in default Nuxeo addons since version 5.8.
+This module is not included in default Nuxeo addons since version 5.8,
+and cannot be used anymore since it relies on query models that have
+been completely removed from Nuxeo for 5.8 (to use content views
+instead).
