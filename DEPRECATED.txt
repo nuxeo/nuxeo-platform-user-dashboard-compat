@@ -1,3 +1,3 @@
-This module is deprecated as of Nuxeo 5.4.2.1-SNAPSHOT, as a new JSF dashboard has been
+This module is deprecated as of Nuxeo 5.4.2-HF33, as a new JSF dashboard has been
 implemented using content views, and as the new opensocial dahsboard is also
 available.
